@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js" %> 
+  <!--[if !IE 7]>
+    <style type="text/css">
+      .container { 
+        display: table;
+        height: 100%
+       }
+    </style>
+  <![endif]-->
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= params.values_at(:controller, :action).join(' ') %>">
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>
