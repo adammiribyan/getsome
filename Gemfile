@@ -40,6 +40,7 @@ gem 'capistrano'
 group :test do
   # Capybara for integration tests
   gem 'capybara'
+  gem 'database_cleaner'
   # Girls in a factories
   gem 'factory_girl_rails'
 end
