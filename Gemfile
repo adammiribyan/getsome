@@ -46,6 +46,7 @@ group :test do
   # Spork
   gem 'spork', '~> 0.9.0.rc'
   gem 'spork-testunit'
+  gem 'ruby-prof' # for benchmarks
   # Guards
   gem 'guard-spork'
   gem 'guard-test', "~> 0.4.3"
