@@ -43,6 +43,12 @@ group :test do
   gem 'database_cleaner'
   # Girls in a factories
   gem 'factory_girl_rails'
+  # Spork
+  gem 'spork', '~> 0.9.0.rc'
+  gem 'spork-testunit'
+  # Guards
+  gem 'guard-spork'
+  gem 'guard-test', "~> 0.4.3"
 end
 
 group :production do
